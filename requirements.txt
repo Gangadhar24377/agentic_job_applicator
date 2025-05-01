@@ -1,3 +1,7 @@
+# Add this at the top (SQLite fix)
+pysqlite3-binary>=0.5.0; platform_system=="Windows"
+
+# Keep all your existing dependencies but modify chromadb version
 aiohappyeyeballs==2.6.1
 aiohttp==3.11.16
 aiosignal==1.3.2
@@ -20,11 +24,13 @@ certifi==2025.1.31
 cffi==1.17.1
 charset-normalizer==3.4.1
 chroma-hnswlib==0.7.6
-chromadb==0.6.3
+# Change this line to use a specific version
+chromadb==0.4.18  
 click==8.1.8
 colorama==0.4.6
 coloredlogs==15.0.1
-crewai==0.108.0
+# Specify a version that doesn't require the latest chromadb
+crewai==0.100.0  
 cryptography==44.0.2
 dataclasses-json==0.6.7
 decorator==5.2.1
@@ -183,7 +189,7 @@ tqdm==4.67.1
 traitlets==5.14.3
 transformers==4.50.3
 trio==0.29.0
-trio-websocket==0.12.2
+trio-websocket==0.12.0
 typer==0.15.2
 typing-inspect==0.9.0
 typing-inspection==0.4.0
@@ -196,7 +202,7 @@ watchdog==6.0.0
 watchfiles==1.0.4
 wcwidth==0.2.13
 websocket-client==1.8.0
-websockets==15.0.1
+websockets==15.0.0
 wrapt==1.17.2
 wsproto==1.2.0
 yarl==1.18.3
