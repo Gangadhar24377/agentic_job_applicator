@@ -1,7 +1,7 @@
 # requirements.txt
 
 # Add this at the top (SQLite fix) - Installs a newer SQLite version
-pysqlite3-binary>=0.5.0
+#pysqlite3-binary>=0.5.0
 
 # --- Your other dependencies ---
 aiohappyeyeballs==2.6.1
@@ -27,7 +27,7 @@ cffi==1.17.1
 charset-normalizer==3.4.1
 chroma-hnswlib==0.7.6
 # Pinning chromadb is okay with the pysqlite3 fix
-chromadb==0.4.18
+#chromadb==0.4.18
 click==8.1.8
 colorama==0.4.6
 coloredlogs==15.0.1
