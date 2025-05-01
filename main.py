@@ -7,6 +7,7 @@ from typing import Dict, List, Any, Optional
 
 from dotenv import load_dotenv
 
+os.environ["CREWAI_DISABLE_EMBEDDINGS"] = "true"
 import sys
 print(sys.executable)  # This tells you which Python installation is running
 
