@@ -14,6 +14,11 @@ print(sys.executable)  # This tells you which Python installation is running
 # Load environment variables from .env file
 load_dotenv()
 
+try:
+    from sqlite_fix import *
+except ImportError:
+    pass
+
 # Import wrapper for CrewAI to handle import errors gracefully
 try:
     from crewai import Crew, Agent, Task, Process, Tool
