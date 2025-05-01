@@ -1,7 +1,9 @@
-# Add this at the top (SQLite fix)
-pysqlite3-binary>=0.5.0; platform_system=="Windows"
+# requirements.txt
 
-# Keep all your existing dependencies but modify chromadb version
+# Add this at the top (SQLite fix) - Installs a newer SQLite version
+pysqlite3-binary>=0.5.0
+
+# --- Your other dependencies ---
 aiohappyeyeballs==2.6.1
 aiohttp==3.11.16
 aiosignal==1.3.2
@@ -24,13 +26,12 @@ certifi==2025.1.31
 cffi==1.17.1
 charset-normalizer==3.4.1
 chroma-hnswlib==0.7.6
-# Change this line to use a specific version
-chromadb==0.4.18  
+# Pinning chromadb is okay with the pysqlite3 fix
+chromadb==0.4.18
 click==8.1.8
 colorama==0.4.6
 coloredlogs==15.0.1
-# Specify a version that doesn't require the latest chromadb
-crewai==0.100.0  
+crewai==0.100.0
 cryptography==44.0.2
 dataclasses-json==0.6.7
 decorator==5.2.1
@@ -196,7 +197,6 @@ typing-inspection==0.4.0
 typing_extensions==4.13.0
 tzdata==2025.2
 urllib3==2.3.0
-uv==0.6.11
 uvicorn==0.34.0
 watchdog==6.0.0
 watchfiles==1.0.4
